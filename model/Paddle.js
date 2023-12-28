@@ -18,17 +18,17 @@ class Paddle extends Sprite {
   }
   
   keyDownHandler(e) {
-    if (e.key === "Right" || e.key === "ArrowRight") {
+    if (e.key === "d") {
       this.dx = this.displacement;
-    } else if (e.key === "Left" || e.key === "ArrowLeft") {
+    } else if (e.key === "a") {
       this.dx = -this.displacement;
     }
   }
 
   keyUpHandler(e) {
-    if (e.key === "Right" || e.key === "ArrowRight") {
+    if (e.key === "d") {
       this.dx = 0;
-    } else if (e.key === "Left" || e.key === "ArrowLeft") {
+    } else if (e.key === "a") {
       this.dx = 0;
     }
   }
