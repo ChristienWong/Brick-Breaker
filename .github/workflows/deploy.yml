@@ -17,6 +17,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+
 jobs:
   # Build job
   build:
@@ -44,7 +45,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "20"
+          node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         uses: actions/configure-pages@v2
